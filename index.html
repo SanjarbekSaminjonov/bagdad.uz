@@ -51,17 +51,17 @@
   >
     <!-- HEADER -->
     <header
-      class="bg-black w-full fixed flex justify-between shadow-white shadow-sm items-center p-4 md:px-12 h-18"
+      class="bg-black w-full fixed flex justify-between shadow-neftlix shadow-sm items-center p-4 md:px-12 h-18"
     >
-      <a href="#">
+      <a href="/">
         <img
-          src="https://p7.hiclipart.com/preview/882/320/37/5bbc6588c7c86.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png"
           alt="Your Logo"
           class="h-10"
         />
       </a>
       <button
-        class="bg-neftlix px-4 py-2 text-sm mx-auto rounded-lg flex items-center md:hidden border-2 border-neftlix hover:bg-black duration-200 active:opacity-75"
+        class="bg-neftlix px-3 py-1 text-sm mx-auto rounded-lg flex items-center md:hidden border-2 border-neftlix active:bg-black duration-200 active:opacity-75"
       >
         Kolsultatsiya
         <svg
@@ -78,24 +78,22 @@
         </svg>
       </button>
       <nav>
-        <button class="md:hidden" @click="isNavbarOpen = !isNavbarOpen">
+        <button class="md:hidden active:text-neftlix transform duration-500" @click="isNavbarOpen = !isNavbarOpen">
           <svg
-            class="h-10 w-10 text-white"
+            class="h-8 w-8"
             :class="{'hidden': isNavbarOpen, 'inline-block': !isNavbarOpen}"
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+            viewBox="0 0 20 20"
+            fill="currentColor"
           >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="{2}"
-              d="M4 6h16M4 12h16M4 18h16"
+              fill-rule="evenodd"
+              d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
             />
           </svg>
           <svg
-            class="h-10 w-10 text-white"
+            class="h-8 w-8"
             :class="{'hidden': !isNavbarOpen, 'inline-block': isNavbarOpen}"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -111,23 +109,43 @@
           </svg>
         </button>
         <ul
-          class="bg-black text-center fixed flex flex-col justify-center left-0 right-0 min-h-screen space-y-8 pb-24 trasform duration-300 translate-x-full md:relative md:flex md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 md:flex-row"
+          class="bg-black text-center fixed flex flex-col justify-center left-0 right-0 top-20 min-h-screen space-y-8 pb-24 trasform duration-300 translate-x-full md:relative md:flex md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 md:flex-row"
           :class="{'translate-x-full': !isNavbarOpen, 'translate-x-0': isNavbarOpen}"
         >
           <li>
-            <a href="#" class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline">Home</a>
+            <a
+              href="#"
+              class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#" class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline">Services</a>
+            <a
+              href="#"
+              class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline"
+              >Services</a
+            >
           </li>
           <li>
-            <a href="#" class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline">About</a>
+            <a
+              href="#"
+              class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline"
+              >About</a
+            >
           </li>
           <li>
-            <a href="#" class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline">Team</a>
+            <a
+              href="#"
+              class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline"
+              >Team</a
+            >
           </li>
           <li>
-            <a href="#" class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline">Contact</a>
+            <a
+              href="#"
+              class="trasform duration-200 hover:text-neftlix active:opacity-75 active:underline"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -154,7 +172,7 @@
 
     <!-- MAIN CONTENT -->
     <main class="main-content mt-20">
-      <p class="p-4">
+      <!-- <p class="p-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus excepturi
         sequi esse, animi voluptas officiis ipsa rerum laborum dolore
         consequatur eligendi porro nobis explicabo magni odio consectetur est
@@ -236,7 +254,7 @@
         aliquid perferendis, aliquam commodi tempore odit asperiores tenetur
         quisquam possimus cupiditate, porro voluptatem unde quibusdam obcaecati
         cum quae dignissimos nemo!
-      </p>
+      </p> -->
     </main>
     <!-- /MAIN CONTENT -->
 
