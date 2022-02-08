@@ -35,10 +35,31 @@
               neftlix: "#d90913",
               black: "#000000",
             },
+            minHeight: {
+              "40f": "40%",
+              "50f": "50%",
+            },
           },
         },
       };
     </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .bold-font {
+          font-family: "TT Travels Bold", "Arial", sans-serif;
+        }
+
+        .smaller {
+          font-size: 200px;
+          line-height: 100%;
+        }
+
+        .larger {
+          font-size: 300px;
+        }
+      }
+    </style>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -51,134 +72,154 @@
   >
     <!-- HEADER -->
     <header
-      class="bg-black w-full fixed flex justify-between shadow-neftlix shadow-sm items-center p-4 md:px-12 h-18"
+      class="bg-black w-full fixed shadow-neftlix shadow-sm p-4 md:px-12 h-18"
     >
-      <a href="/">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png"
-          alt="Your Logo"
-          class="h-10"
-        />
-      </a>
-      <button
-        class="bg-neftlix px-3 py-1 text-sm mx-auto rounded-lg flex items-center md:hidden border-2 border-neftlix active:bg-black duration-200"
-      >
-        Konsultatsiya
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4 ml-1"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
+      <div class="flex justify-between items-center container container-xl">
+        <a href="/">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png"
+            alt="Your Logo"
+            class="h-10"
           />
-        </svg>
-      </button>
-      <nav>
+        </a>
         <button
-          class="md:hidden active:text-neftlix transform duration-500"
-          @click="isNavbarOpen = !isNavbarOpen"
+          class="bg-neftlix px-3 py-1 text-sm mx-auto rounded-lg flex items-center md:hidden border-2 border-neftlix active:bg-black duration-200"
         >
+          Konsultatsiya
           <svg
-            class="h-8 w-8"
-            :class="{'hidden': isNavbarOpen, 'inline-block': !isNavbarOpen}"
             xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 ml-1"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
             <path
               fill-rule="evenodd"
-              d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
               clip-rule="evenodd"
             />
           </svg>
+        </button>
+        <nav>
+          <button
+            class="md:hidden active:text-neftlix transform duration-500"
+            @click="isNavbarOpen = !isNavbarOpen"
+          >
+            <svg
+              class="h-8 w-8"
+              :class="{'hidden': isNavbarOpen, 'inline-block': !isNavbarOpen}"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <svg
+              class="h-8 w-8"
+              :class="{'hidden': !isNavbarOpen, 'inline-block': isNavbarOpen}"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <ul
+            class="bg-black text-center fixed flex flex-col justify-center left-0 right-0 top-20 min-h-screen space-y-8 pb-48 trasform duration-300 translate-x-full md:relative md:flex md:min-h-0 md:top-0 md:space-y-0 md:space-x-6 md:translate-x-0 md:p-0 md:flex-row"
+            :class="{'translate-x-full': !isNavbarOpen, 'translate-x-0': isNavbarOpen}"
+          >
+            <li>
+              <a
+                href="#"
+                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="bg-neftlix px-6 py-2 rounded-lg hidden md:flex items-center border-2 border-neftlix hover:bg-black duration-200 active:opacity-75"
+        >
+          Konsultatsiya
           <svg
-            class="h-8 w-8"
-            :class="{'hidden': !isNavbarOpen, 'inline-block': isNavbarOpen}"
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+            class="h-4 w-4 ml-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
+              fill-rule="evenodd"
+              d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"
             />
           </svg>
         </button>
-        <ul
-          class="bg-black text-center fixed flex flex-col justify-center left-0 right-0 top-20 min-h-screen space-y-8 pb-48 trasform duration-300 translate-x-full md:relative md:flex md:min-h-0 md:top-0 md:space-y-0 md:space-x-6 md:translate-x-0 md:p-0 md:flex-row"
-          :class="{'translate-x-full': !isNavbarOpen, 'translate-x-0': isNavbarOpen}"
-        >
-          <li>
-            <a
-              href="#"
-              class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-              >Team</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <button
-        class="bg-neftlix px-6 py-2 rounded-lg hidden md:flex items-center border-2 border-neftlix hover:bg-black duration-200 active:opacity-75"
-      >
-        Konsultatsiya
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4 ml-1"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
+      </div>
     </header>
     <!-- /HEADER -->
 
     <!-- MAIN CONTENT -->
-    <main class="main-content mt-20"></main>
+    <main class="main-content mt-20 container container-xl">
+      <div class="flex items-end min-h-40f">
+        <h1 class="bold-font text-6xl md:text-8xl">BAGDAD</h1>
+      </div>
+      <div class="mt-5">
+        <p class="m-0 p-0 text-2xl md:text-3xl md:w-1/3">
+          Lorem ipsum dolor sit amet consectetur.
+        </p>
+      </div>
+      <div class="md:flex md:items-end">
+        <h1 class="m-0 p-0 bold-font smaller text-center md:larger md:text-start">10</h1>
+        <p class="m-0 md:pb-12 md:w-1/2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+          reprehenderit.
+        </p>
+      </div>
+    </main>
     <!-- /MAIN CONTENT -->
 
     <!-- FOOTER -->
-    <footer class="site-footer">This is the FOOTER</footer>
+    <!-- <footer class="site-footer container container-xl">
+      This is the FOOTER
+    </footer> -->
     <!-- /FOOTER -->
 
     <!-- JAVASCRIPT -->
