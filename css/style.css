@@ -57,3 +57,14 @@ a {
 .main-content {
   flex-grow: 1;
 }
+.input-container{
+  background-color: #161616;
+}
+input {
+  background: transparent;
+  border-bottom-color: #d90913;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #B3B3B3;
+}
