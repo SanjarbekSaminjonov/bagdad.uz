@@ -51,7 +51,7 @@
           font-family: "TT Travels Bold", "Arial", sans-serif;
         }
         .smaller {
-          font-size: 180px;
+          font-size: 150px;
           line-height: 100%;
         }
         .larger {
@@ -206,60 +206,73 @@
 
     <!-- MAIN CONTENT -->
     <main
-      class="main-content mt-10 container min-h-100 md:mt-24 md:flex md:flex-row-reverse"
+      class="container main-content mt-20 md:mt-32 md:flex md:flex-row-reverse"
     >
       <div class="md:p-4 md:w-1/2">
-        <img src="./images/main-img.png" alt="main-image" />
+        <img class="pl-12" src="./images/main-img.png" alt="main-image" />
       </div>
-      <div class="min-h-screen md:p-4 md:w-1/2">
-        <h1 class="bold-font mt-12 text-5xl md:text-8xl">BAGDAD</h1>
-        <p class="text-grey text-2xl md:text-3xl">Marketing agentligi</p>
-        <div class="flex items-end">
-          <h1 class="bold-font smaller h-36 md:h-80 md:larger">10</h1>
-          <p class="md:text-2xl md:w-56 md:h-14 text-grey">muvaffaqiyatli loyihalar</p>
+      <div class="md:p-4 md:w-1/2">
+        <h1 class="bold-font text-5xl mt-12 md:text-8xl">BAGDAD</h1>
+        <p class="mt-4 text-grey text-2xl md:text-3xl">Marketing agentligi</p>
+        <div class="flex items-end mt-10">
+          <h1 class="bold-font smaller h-32 md:h-60 md:larger">10</h1>
+          <p class="md:text-2xl md:w-56 md:h-14 text-grey">
+            muvaffaqiyatli loyihalar
+          </p>
         </div>
       </div>
     </main>
-    <!-- /MAIN CONTENT -->
-    <div class="container">
-      <h1 class="text-center text-2xl text-neftlix mb-10">Contact Us</h1>
-      <h1 class="text-4xl text-center mb-24">
+
+    <!-- Contact section -->
+    <div class="container mt-32">
+      <div class="flex items-center justify-center">
+        <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
+        <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
+        <h1 class="text-center text-xl mx-2 md:mx-4 text-neftlix">
+          Bog'laning
+        </h1>
+        <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
+        <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
+      </div>
+      <h2 class="text-3xl md:text-5xl text-center mt-10">
         MDevs offers everything you need
-      </h1>
-      <!-- <form action="" class="bg-formBg py-20 px-36">
-        <h1 class="text-center text-2xl mb-10">BIZGA XABAR QOLDIRING</h1>
+      </h2>
+    </div>
+
+    <div class="mt-10 bg-formBg">
+      <form class="container py-12 md:py-20 md:px-36">
+        <h4 class="text-center text-2xl">BIZGA XABAR QOLDIRING</h4>
         <div
-          class="p-8 border-solid border-2 border-neftlix md:flex md:justify-between"
+          class="mt-4 border-solid border-2 border-neftlix md:flex md:justify-between"
         >
           <div>
-            <div class="input-container mb-6">
+            <div>
               <input class="bg-formBg" type="text" placeholder="Ismingiz" />
             </div>
-            <div class="input-container mb-4">
+            <div>
               <input
                 class="bg-formBg"
                 type="text"
                 placeholder="Biznes faoliyatingiz"
               />
             </div>
-            <div class="input-container mb-4">
+            <div>
               <input
                 class="bg-formBg"
-                type="number"
+                type="text"
                 placeholder="Telefon raqamingiz"
               />
             </div>
           </div>
           <textarea
             class="bg-formBg resize-none border-none outline-none border-solid border-2 border-neftlix"
-            name=""
-            cols="30"
-            rows="10"
+            rows="5"
             placeholder="Xabar matni"
           ></textarea>
         </div>
-      </form> -->
+      </form>
     </div>
+
     <!-- FOOTER -->
     <footer class="site-footer container container-xl">asadsda</footer>
 

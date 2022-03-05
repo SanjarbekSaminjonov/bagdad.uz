@@ -46,17 +46,11 @@ a {
 .main-content {
   flex-grow: 1;
 }
-.input-container {
-  background-color: #161616;
-}
+
 input {
-  background: transparent;
   border-bottom-color: #d90913;
   font-size: 18px;
   border: none;
   outline: none;
   color: #b3b3b3;
-}
-textarea{
-  /* resize: none; */
 }
