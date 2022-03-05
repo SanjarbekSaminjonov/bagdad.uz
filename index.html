@@ -20,14 +20,8 @@
     <!-- TITLE -->
     <title>Bagdad Agency</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-
     <!-- ALPINE JS -->
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+    <script defer src="./js/alpine.js"></script>
 
     <!-- TAILWIND CSS -->
     <script src="./js/tailwind.js"></script>
@@ -57,7 +51,7 @@
           font-family: "TT Travels Bold", "Arial", sans-serif;
         }
         .smaller {
-          font-size: 200px;
+          font-size: 180px;
           line-height: 100%;
         }
         .larger {
@@ -73,6 +67,9 @@
         }
       }
     </style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body
@@ -90,7 +87,7 @@
           <img
             src="./images/site-logo.png"
             alt="Your Logo"
-            class="h-16 text-neftlix"
+            class="md:h-16 text-neftlix h-10"
           />
         </a>
         <button
@@ -152,35 +149,35 @@
               <a
                 href="#"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                >Home</a
+                >Bosh sahifa</a
               >
             </li>
             <li>
               <a
                 href="#"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                >Services</a
+                >Xizmatlarimiz</a
               >
             </li>
             <li>
               <a
                 href="#"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                >About</a
+                >Biz haqimizda</a
               >
             </li>
             <li>
               <a
                 href="#"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                >Team</a
+                >Bizning jamoa</a
               >
             </li>
             <li>
               <a
                 href="#"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                >Contact</a
+                >Bog'lanish</a
               >
             </li>
           </ul>
@@ -209,17 +206,17 @@
 
     <!-- MAIN CONTENT -->
     <main
-      class="main-content mt-24 container min-h-100 md:flex md:flex-row-reverse"
+      class="main-content mt-10 container min-h-100 md:mt-24 md:flex md:flex-row-reverse"
     >
-      <div class="p-4 md:w-1/2">
+      <div class="md:p-4 md:w-1/2">
         <img src="./images/main-img.png" alt="main-image" />
       </div>
-      <div class="p-4 md:w-1/2 min-h-screen">
-        <h1 class="text-8xl mt-12">BAGDAD</h1>
-        <p class="text-grey text-3xl">Marketing agentligi</p>
+      <div class="min-h-screen md:p-4 md:w-1/2">
+        <h1 class="bold-font mt-12 text-5xl md:text-8xl">BAGDAD</h1>
+        <p class="text-grey text-2xl md:text-3xl">Marketing agentligi</p>
         <div class="flex items-end">
-          <h1 class="larger h-80">10</h1>
-          <p class="text-2xl w-56 h-14 text-grey">muvaffaqiyatli loyihalar</p>
+          <h1 class="bold-font smaller h-36 md:h-80 md:larger">10</h1>
+          <p class="md:text-2xl md:w-56 md:h-14 text-grey">muvaffaqiyatli loyihalar</p>
         </div>
       </div>
     </main>
@@ -229,33 +226,39 @@
       <h1 class="text-4xl text-center mb-24">
         MDevs offers everything you need
       </h1>
-      <form action="" class="bg-formBg py-20 px-36">
+      <!-- <form action="" class="bg-formBg py-20 px-36">
         <h1 class="text-center text-2xl mb-10">BIZGA XABAR QOLDIRING</h1>
-        <div class="p-8 border-solid border-2 border-neftlix md:flex md:justify-between">
-         <div>
-            
-          <div class="input-container mb-6">
-            <input class="bg-formBg" type="text" placeholder="Ismingiz" />
+        <div
+          class="p-8 border-solid border-2 border-neftlix md:flex md:justify-between"
+        >
+          <div>
+            <div class="input-container mb-6">
+              <input class="bg-formBg" type="text" placeholder="Ismingiz" />
+            </div>
+            <div class="input-container mb-4">
+              <input
+                class="bg-formBg"
+                type="text"
+                placeholder="Biznes faoliyatingiz"
+              />
+            </div>
+            <div class="input-container mb-4">
+              <input
+                class="bg-formBg"
+                type="number"
+                placeholder="Telefon raqamingiz"
+              />
+            </div>
           </div>
-          <div class="input-container mb-4">
-            <input
-              class="bg-formBg"
-              type="text"
-              placeholder="Biznes faoliyatingiz"
-            />
-          </div>
-          <div class="input-container mb-4">
-            <input
-              class="bg-formBg"
-              type="number"
-              placeholder="Telefon raqamingiz"
-            />
-          </div>
-         </div>
-         <textarea class="bg-formBg resize-none border-none outline-none border-solid border-2 border-neftlix" 
-         name="" cols="30" rows="10" placeholder="Xabar matni"></textarea>
+          <textarea
+            class="bg-formBg resize-none border-none outline-none border-solid border-2 border-neftlix"
+            name=""
+            cols="30"
+            rows="10"
+            placeholder="Xabar matni"
+          ></textarea>
         </div>
-      </form>
+      </form> -->
     </div>
     <!-- FOOTER -->
     <footer class="site-footer container container-xl">asadsda</footer>
