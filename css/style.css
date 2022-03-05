@@ -41,23 +41,12 @@ a {
   text-decoration: none;
 }
 
-/* CONTAINER */
-
-.container {
-  width: 100%;
-  max-width: 1000px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* MAIN CONTENT */
 
 .main-content {
   flex-grow: 1;
 }
-.input-container{
+.input-container {
   background-color: #161616;
 }
 input {
@@ -66,5 +55,8 @@ input {
   font-size: 18px;
   border: none;
   outline: none;
-  color: #B3B3B3;
+  color: #b3b3b3;
+}
+textarea{
+  /* resize: none; */
 }

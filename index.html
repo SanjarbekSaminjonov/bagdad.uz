@@ -56,15 +56,20 @@
         .bold-font {
           font-family: "TT Travels Bold", "Arial", sans-serif;
         }
-
         .smaller {
           font-size: 200px;
           line-height: 100%;
         }
-
         .larger {
           font-size: 300px;
-          
+        }
+        .container {
+          width: 100%;
+          max-width: 1240px;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     </style>
@@ -203,44 +208,58 @@
     <!-- /HEADER -->
 
     <!-- MAIN CONTENT -->
-    <main class="main-content mt-24 container min-h-100 md:flex md:flex-row-reverse">
-      <div class="p-4 md:w-1/2 md:p-12">
+    <main
+      class="main-content mt-24 container min-h-100 md:flex md:flex-row-reverse"
+    >
+      <div class="p-4 md:w-1/2">
         <img src="./images/main-img.png" alt="main-image" />
-        
       </div>
-      <div class="p-4 md:w-1/2 md:p-12 min-h-screen">
+      <div class="p-4 md:w-1/2 min-h-screen">
         <h1 class="text-8xl mt-12">BAGDAD</h1>
         <p class="text-grey text-3xl">Marketing agentligi</p>
         <div class="flex items-end">
-          <h1 class="larger h-80">10 </h1>
-        <p class="text-2xl w-56 h-14 text-grey">
-         muvaffaqiyatli loyihalar
-        </p>
+          <h1 class="larger h-80">10</h1>
+          <p class="text-2xl w-56 h-14 text-grey">muvaffaqiyatli loyihalar</p>
         </div>
       </div>
-      
     </main>
     <!-- /MAIN CONTENT -->
-     <div class="container">
-        <h1 class="text-center text-2xl text-neftlix mb-10">Contact Us</h1>
-        <h1 class="text-4xl text-center mb-24">MDevs offers everything you need</h1>
-        <form action="" class="container   bg-formBg py-20">
-           <div class="input-container mb-4">
-             <input class="bg-formBg" type="text" placeholder="Ismingiz">
-           </div>
-           <div class="input-container mb-4">
-             <input class="bg-formBg"  type="text" placeholder="Biznes faoliyatingiz">
-           </div>
-           <div class="input-container mb-4">
-             <input class="bg-formBg "  type="number" placeholder="Telefon raqamingiz">
-           </div>
-        </form>
-     </div>
+    <div class="container">
+      <h1 class="text-center text-2xl text-neftlix mb-10">Contact Us</h1>
+      <h1 class="text-4xl text-center mb-24">
+        MDevs offers everything you need
+      </h1>
+      <form action="" class="bg-formBg py-20 px-36">
+        <h1 class="text-center text-2xl mb-10">BIZGA XABAR QOLDIRING</h1>
+        <div class="p-8 border-solid border-2 border-neftlix md:flex md:justify-between">
+         <div>
+            
+          <div class="input-container mb-6">
+            <input class="bg-formBg" type="text" placeholder="Ismingiz" />
+          </div>
+          <div class="input-container mb-4">
+            <input
+              class="bg-formBg"
+              type="text"
+              placeholder="Biznes faoliyatingiz"
+            />
+          </div>
+          <div class="input-container mb-4">
+            <input
+              class="bg-formBg"
+              type="number"
+              placeholder="Telefon raqamingiz"
+            />
+          </div>
+         </div>
+         <textarea class="bg-formBg resize-none border-none outline-none border-solid border-2 border-neftlix" 
+         name="" cols="30" rows="10" placeholder="Xabar matni"></textarea>
+        </div>
+      </form>
+    </div>
     <!-- FOOTER -->
-    <footer class="site-footer container container-xl">
-     
-    </footer>
-    
+    <footer class="site-footer container container-xl">asadsda</footer>
+
     <!-- /FOOTER -->
 
     <!-- JAVASCRIPT -->
