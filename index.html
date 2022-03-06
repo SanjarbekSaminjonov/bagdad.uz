@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ADDITIONAL META TAGS -->
     <meta name="author" content="Bagdad Agency" />
     <meta
       name="keywords"
-      content="Some keywords here that belong to your web-page"
+      content="Bagdad agentligi Bagdad Agency SMM MARKETING PR BAGHDAD"
     />
-    <meta name="description" content="About your web-page" />
+    <meta name="description" content="BAGHDAD Marketing Agency" />
     <meta name="theme-color" content="#000000" />
 
     <!-- ICON -->
@@ -33,7 +32,7 @@
               neftlix: "#d90913",
               black: "#000000",
               grey: "#B3B3B3;",
-              formBg: "#161616",
+              silver: "#161616",
             },
             minHeight: {
               "25f": "25%",
@@ -65,10 +64,19 @@
           margin-left: auto;
           margin-right: auto;
         }
+
+        .border-gradiend-neftlix {
+          border-image: linear-gradient(
+            90deg,
+            rgba(51, 4, 10, 1) 0%,
+            rgba(195, 10, 19, 1) 50%,
+            rgba(22, 22, 22, 1) 100%
+          );
+          border-image-slice: 1;
+        }
       }
     </style>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -76,7 +84,6 @@
     class="bg-black text-white"
     x-data="{isNavbarOpen: false, scrolledFromTop: false}"
   >
-    <!-- HEADER -->
     <header
       class="bg-black w-full fixed shadow-neftlix shadow-sm p-4 md:px-12 h-18"
     >
@@ -91,7 +98,7 @@
           />
         </a>
         <button
-          class="bg-neftlix px-3 py-1 text-sm mx-auto rounded-lg flex items-center md:hidden border-2 border-neftlix active:bg-black duration-200"
+          class="bg-neftlix px-3 py-2 text-sm mx-auto rounded-2xl flex items-center md:hidden border border-white active:bg-black active:text-neftlix duration-200"
         >
           Konsultatsiya
           <svg
@@ -184,7 +191,7 @@
         </nav>
 
         <button
-          class="bg-neftlix px-6 py-2 rounded-lg hidden md:flex items-center border-2 border-neftlix hover:bg-black duration-200 active:opacity-75"
+          class="bg-neftlix px-6 py-2 rounded-2xl hidden md:flex items-center border-2 border-white hover:bg-black hover:text-neftlix duration-200 active:text-white active:border-neftlix"
         >
           Konsultatsiya
           <svg
@@ -202,9 +209,7 @@
         </button>
       </div>
     </header>
-    <!-- /HEADER -->
 
-    <!-- MAIN CONTENT -->
     <main
       class="container main-content mt-20 md:mt-32 md:flex md:flex-row-reverse"
     >
@@ -223,7 +228,58 @@
       </div>
     </main>
 
-    <!-- Contact section -->
+    <div class="container mt-32">
+      <div class="flex items-center justify-center">
+        <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
+        <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
+        <h1 class="text-center text-xl mx-2 md:mx-4 text-neftlix">
+          Xizmatlarimiz
+        </h1>
+        <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
+        <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
+      </div>
+      <h2 class="text-3xl md:text-5xl text-center mt-10">
+        MDevs offers everything you need
+      </h2>
+    </div>
+
+    <div class="container mt-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+        <div class="my-10 flex flex-col items-center justify-center">
+          <img
+            class="w-36 md:w-48"
+            src="./images/service1.png"
+            alt="service1"
+          />
+          <h2 class="text-center mt-5 text-3xl">MARKETING</h2>
+        </div>
+        <div class="my-10 flex flex-col items-center justify-center">
+          <img
+            class="w-36 md:w-48"
+            src="./images/service2.png"
+            alt="service2"
+          />
+          <h2 class="text-center mt-5 text-3xl">MARKETING</h2>
+        </div>
+        <div class="my-10 flex flex-col items-center justify-center">
+          <img
+            class="w-36 md:w-48"
+            src="./images/service3.png"
+            alt="service3"
+          />
+          <h2 class="text-center mt-5 text-3xl">MARKETING</h2>
+        </div>
+        <div class="my-10 flex flex-col items-center justify-center">
+          <img
+            class="w-36 md:w-48"
+            src="./images/service4.png"
+            alt="service4"
+          />
+          <h2 class="text-center mt-5 text-3xl">MARKETING</h2>
+        </div>
+      </div>
+    </div>
+
     <div class="container mt-32">
       <div class="flex items-center justify-center">
         <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
@@ -239,39 +295,52 @@
       </h2>
     </div>
 
-    <div class="mt-10 bg-formBg">
-      <form class="container py-12 md:py-20 md:px-36">
-        <h4 class="text-center text-2xl">BIZGA XABAR QOLDIRING</h4>
-        <div
-          class="mt-4 border-solid border-2 border-neftlix md:flex md:justify-between"
-        >
-          <div>
+    <form class="mt-10 bg-silver container py-10 md:py-20">
+      <div class="border-solid border border-neftlix p-5 md:p-10 md:mx-32">
+        <h4 class="text-center text-lg md:text-3xl bold-font">
+          BIZGA XABAR QOLDIRING
+        </h4>
+        <div class="mt-10 md:flex">
+          <div class="md:w-1/2 md:pr-20">
             <div>
-              <input class="bg-formBg" type="text" placeholder="Ismingiz" />
+              <input
+                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix"
+                type="text"
+                placeholder="Ismingiz"
+              />
             </div>
             <div>
               <input
-                class="bg-formBg"
+                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix"
                 type="text"
                 placeholder="Biznes faoliyatingiz"
               />
             </div>
             <div>
               <input
-                class="bg-formBg"
+                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix"
                 type="text"
                 placeholder="Telefon raqamingiz"
               />
             </div>
           </div>
-          <textarea
-            class="bg-formBg resize-none border-none outline-none border-solid border-2 border-neftlix"
-            rows="5"
-            placeholder="Xabar matni"
-          ></textarea>
+          <div class="md:w-1/2 md:pr-10">
+            <textarea
+              class="bg-silver w-full my-3 border-0 border-b-2 px-2 pb-2 border-gradiend-neftlix resize-none"
+              rows="6"
+              placeholder="Xabar matni"
+            ></textarea>
+            <div class="flex justify-center md:justify-end">
+              <button
+                class="bg-neftlix px-10 py-2 text-sm rounded-2xl border border-white active:bg-silver active:text-neftlix duration-200"
+              >
+                Yuborish
+              </button>
+            </div>
+          </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
 
     <!-- FOOTER -->
     <footer class="site-footer container container-xl">asadsda</footer>
