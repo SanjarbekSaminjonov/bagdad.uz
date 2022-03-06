@@ -84,6 +84,7 @@
     class="bg-black text-white"
     x-data="{isNavbarOpen: false, scrolledFromTop: false}"
   >
+    <div id="home" class="transform duration-500"></div>
     <header
       class="bg-black w-full fixed shadow-neftlix shadow-sm p-4 md:px-12 h-18"
     >
@@ -154,36 +155,41 @@
           >
             <li>
               <a
-                href="#"
+                href="#home"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                @click="isNavbarOpen = !isNavbarOpen"
                 >Bosh sahifa</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#services"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                @click="isNavbarOpen = !isNavbarOpen"
                 >Xizmatlarimiz</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#about"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                @click="isNavbarOpen = !isNavbarOpen"
                 >Biz haqimizda</a
               >
             </li>
-            <li>
+            <!-- <li>
               <a
-                href="#"
+                href="#our-team"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                @click="isNavbarOpen = !isNavbarOpen"
                 >Bizning jamoa</a
               >
-            </li>
+            </li> -->
             <li>
               <a
-                href="#"
+                href="#contact"
                 class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+                @click="isNavbarOpen = !isNavbarOpen"
                 >Bog'lanish</a
               >
             </li>
@@ -224,6 +230,7 @@
           <p class="md:text-2xl md:w-56 md:h-14 text-grey">
             muvaffaqiyatli loyihalar
           </p>
+          <div id="services" class="transform duration-500"></div>
         </div>
       </div>
     </main>
@@ -278,6 +285,7 @@
           <h2 class="text-center mt-5 text-3xl">MARKETING</h2>
         </div>
       </div>
+      <div id="contact" class="transform duration-500"></div>
     </div>
 
     <div class="container mt-32">
@@ -343,7 +351,37 @@
     </form>
 
     <!-- FOOTER -->
-    <footer class="site-footer container container-xl">asadsda</footer>
+    <footer class="bg-silver mt-20 md:mt-36">
+      <div class="container mt-10">
+        <a href="#home">
+          <img
+            class="mx-auto w-32 md:w-40"
+            src="./images/site-logo.png"
+            alt="BAGHDAD"
+          />
+        </a>
+        <ul class="list-none flex justify-center items-center mt-10">
+          <li class="px-4 md:px-10">
+            <a class="text-neftlix text-lg md:text-xl bold-font" href="#"
+              >INSTAGRAM</a
+            >
+          </li>
+          <li class="px-4 md:px-10">
+            <a class="text-neftlix text-lg md:text-xl bold-font" href="#"
+              >FACEBOOK</a
+            >
+          </li>
+        </ul>
+        <p class="my-10 text-center text-xs md:text-lg">
+          &copy;
+          <script>
+            const Year = new Date().getFullYear();
+            document.write(Year);
+          </script>
+          &nbsp; BAGDAD AGENCY &nbsp; - &nbsp; Barcha huquqlar himoyalangan
+        </p>
+      </div>
+    </footer>
 
     <!-- /FOOTER -->
 
