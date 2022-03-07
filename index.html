@@ -177,14 +177,6 @@
                 >Biz haqimizda</a
               >
             </li>
-            <!-- <li>
-              <a
-                href="#our-team"
-                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                @click="isNavbarOpen = !isNavbarOpen"
-                >Bizning jamoa</a
-              >
-            </li> -->
             <li>
               <a
                 href="#contact"
@@ -303,7 +295,7 @@
       </h2>
     </div>
 
-    <form class="mt-10 bg-silver container py-10 md:py-20">
+    <form id="main-form" class="mt-10 bg-silver container py-10 md:py-20">
       <div class="border-solid border border-neftlix p-5 md:p-10 md:mx-32">
         <h4 class="text-center text-lg md:text-3xl bold-font">
           BIZGA XABAR QOLDIRING
@@ -312,21 +304,27 @@
           <div class="md:w-1/2 md:pr-20">
             <div>
               <input
-                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix"
+                required
+                id="user-name"
+                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix border-transparent focus:border-transparent focus:ring-0"
                 type="text"
                 placeholder="Ismingiz"
               />
             </div>
             <div>
               <input
-                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix"
+                required
+                id="business-field"
+                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix border-transparent focus:border-transparent focus:ring-0"
                 type="text"
                 placeholder="Biznes faoliyatingiz"
               />
             </div>
             <div>
               <input
-                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix"
+                required
+                id="phone-number"
+                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix border-transparent focus:border-transparent focus:ring-0"
                 type="text"
                 placeholder="Telefon raqamingiz"
               />
@@ -334,7 +332,9 @@
           </div>
           <div class="md:w-1/2 md:pr-10">
             <textarea
-              class="bg-silver w-full my-3 border-0 border-b-2 px-2 pb-2 border-gradiend-neftlix resize-none"
+              required
+              id="message"
+              class="bg-silver w-full my-3 border-0 border-b-2 px-2 pb-2 border-gradiend-neftlix resize-none border-transparent focus:border-transparent focus:ring-0"
               rows="6"
               placeholder="Xabar matni"
             ></textarea>
