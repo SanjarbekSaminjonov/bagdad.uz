@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="author" content="Bagdad Agency" />
-    <meta
-      name="keywords"
-      content="Bagdad agentligi Bagdad Agency SMM MARKETING STRATEGIYA PR BAGHDAD"
-    />
-    <meta name="description" content="BAGHDAD Marketing Agency" />
-    <meta name="theme-color" content="#000000" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ICON -->
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+  <meta name="author" content="Bagdad Agency" />
+  <meta name="keywords" content="Bagdad agentligi Bagdad Agency SMM MARKETING STRATEGIYA PR BAGHDAD" />
+  <meta name="description" content="BAGHDAD Marketing Agency" />
+  <meta name="theme-color" content="#000000" />
 
-    <!-- TITLE -->
-    <title>Bagdad Agency</title>
+  <!-- ICON -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
 
-    <!-- ALPINE JS -->
-    <script defer src="./js/alpine.js"></script>
+  <!-- TITLE -->
+  <title>Bagdad Agency</title>
 
-    <!-- TAILWIND CSS -->
-    <script src="./js/tailwind.js"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              neftlix: "#d90913",
-              black: "#000000",
-              grey: "#B3B3B3;",
-              silver: "#161616",
-            },
-            minHeight: {
-              "25f": "25%",
-              "40f": "40%",
-              "50f": "50%",
-            },
+  <!-- ALPINE JS -->
+  <script defer src="./js/alpine.js"></script>
+
+  <!-- TAILWIND CSS -->
+  <script src="./js/tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neftlix: "#d90913",
+            black: "#000000",
+            grey: "#B3B3B3;",
+            silver: "#161616",
+          },
+          minHeight: {
+            "25f": "25%",
+            "40f": "40%",
+            "50f": "50%",
           },
         },
-      };
-    </script>
+      },
+    };
+  </script>
 
-    <style type="text/tailwindcss">
-      @layer utilities {
+  <style type="text/tailwindcss">
+    @layer utilities {
         .bold-font {
           font-family: "TT Travels Bold", "Arial", sans-serif;
         }
@@ -77,156 +75,107 @@
       }
     </style>
 
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-  <body
-    class="bg-black text-white"
-    x-data="{isNavbarOpen: false, scrolledFromTop: false}"
-  >
-    <div id="home" class="transform duration-500"></div>
-    <header
-      class="bg-black w-full fixed shadow-neftlix shadow-sm p-4 md:px-12 h-18"
-    >
-      <div
-        class="flex justify-between items-center mx-auto md:container container-xl"
-      >
-        <a href="/">
-          <img
-            src="./images/site-logo.png"
-            alt="Your Logo"
-            class="md:h-16 text-neftlix h-10"
-          />
-        </a>
-        <button
-          class="bg-neftlix px-3 py-2 text-sm mx-auto rounded-2xl flex items-center md:hidden border border-white active:bg-black active:text-neftlix duration-200"
-        >
-          Konsultatsiya
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4 ml-1"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"
-            />
+<body class="bg-black text-white" x-data="{isNavbarOpen: false, scrolledFromTop: false}">
+
+  <!-- Header -->
+  <header class="bg-black w-full fixed shadow-neftlix shadow-sm p-4 md:px-12 h-18">
+    <div class="flex justify-between items-center mx-auto md:container container-xl">
+      <!-- Logo -->
+      <a href="/">
+        <img src="./images/site-logo.png" alt="Your Logo" class="md:h-16 text-neftlix h-10" />
+      </a>
+
+      <!-- Consulting button -->
+      <button
+        class="bg-neftlix px-3 py-2 text-sm mx-auto rounded-2xl flex items-center md:hidden border border-white active:bg-black active:text-neftlix duration-200">
+        Konsultatsiya
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <!-- Navigation -->
+      <nav>
+        <button class="md:hidden active:text-neftlix transform duration-500" @click="isNavbarOpen = !isNavbarOpen">
+          <svg class="h-8 w-8" :class="{'hidden': isNavbarOpen, 'inline-block': !isNavbarOpen}"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd" />
+          </svg>
+          <svg class="h-8 w-8" :class="{'hidden': !isNavbarOpen, 'inline-block': isNavbarOpen}"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-        <nav>
-          <button
-            class="md:hidden active:text-neftlix transform duration-500"
-            @click="isNavbarOpen = !isNavbarOpen"
-          >
-            <svg
-              class="h-8 w-8"
-              :class="{'hidden': isNavbarOpen, 'inline-block': !isNavbarOpen}"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <svg
-              class="h-8 w-8"
-              :class="{'hidden': !isNavbarOpen, 'inline-block': isNavbarOpen}"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-          <ul
-            class="bg-black text-center fixed flex flex-col justify-center left-0 right-0 top-20 min-h-screen space-y-8 pb-48 trasform duration-300 translate-x-full md:relative md:flex md:min-h-0 md:top-0 md:space-y-0 md:space-x-6 md:translate-x-0 md:p-0 md:flex-row"
-            :class="{'translate-x-full': !isNavbarOpen, 'translate-x-0': isNavbarOpen}"
-          >
-            <li>
-              <a
-                href="#home"
-                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                @click="isNavbarOpen = !isNavbarOpen"
-                >Bosh sahifa</a
-              >
-            </li>
-            <li>
-              <a
-                href="#services"
-                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                @click="isNavbarOpen = !isNavbarOpen"
-                >Xizmatlarimiz</a
-              >
-            </li>
-            <li>
-              <a
-                href="#about"
-                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                @click="isNavbarOpen = !isNavbarOpen"
-                >Biz haqimizda</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
-                @click="isNavbarOpen = !isNavbarOpen"
-                >Bog'lanish</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <ul
+          class="bg-black text-center fixed flex flex-col justify-center left-0 right-0 top-20 min-h-screen space-y-8 pb-48 trasform duration-300 translate-x-full md:relative md:flex md:min-h-0 md:top-0 md:space-y-0 md:space-x-6 md:translate-x-0 md:p-0 md:flex-row"
+          :class="{'translate-x-full': !isNavbarOpen, 'translate-x-0': isNavbarOpen}">
+          <li>
+            <a href="#home" class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+              @click="isNavbarOpen = !isNavbarOpen">Bosh sahifa</a>
+          </li>
+          <li>
+            <a href="#services"
+              class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+              @click="isNavbarOpen = !isNavbarOpen">Xizmatlarimiz</a>
+          </li>
+          <li>
+            <a href="#about"
+              class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+              @click="isNavbarOpen = !isNavbarOpen">Biz haqimizda</a>
+          </li>
+          <li>
+            <a href="#contact"
+              class="trasform duration-200 md:hover:text-neftlix md:active:opacity-75 active:text-neftlix"
+              @click="isNavbarOpen = !isNavbarOpen">Bog'lanish</a>
+          </li>
+        </ul>
+      </nav>
 
-        <button
-          class="bg-neftlix px-6 py-2 rounded-2xl hidden md:flex items-center border-2 border-white hover:bg-black hover:text-neftlix duration-200 active:text-white active:border-neftlix"
-        >
-          Konsultatsiya
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4 ml-1"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
-    </header>
+      <!-- Consulting button -->
+      <button
+        class="bg-neftlix px-6 py-2 rounded-2xl hidden md:flex items-center border-2 border-white hover:bg-black hover:text-neftlix duration-200 active:text-white active:border-neftlix">
+        Konsultatsiya
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+  </header>
 
-    <main
-      class="container main-content mt-20 md:mt-32 md:flex md:flex-row-reverse"
-    >
-      <div class="md:p-4 md:w-1/2">
-        <img class="pl-12" src="./images/main-img.png" alt="main-image" />
-      </div>
-      <div class="md:p-4 md:w-1/2">
-        <h1 class="bold-font text-5xl mt-12 md:text-8xl">BAGDAD</h1>
-        <p class="mt-4 text-grey text-2xl md:text-3xl">Marketing agentligi</p>
-        <div class="flex items-end mt-10">
-          <h1 class="bold-font smaller h-32 md:h-60 md:larger">10</h1>
-          <p class="md:text-2xl md:w-56 md:h-14 text-grey">
-            muvaffaqiyatli loyihalar
-          </p>
-          <div id="services" class="transform duration-500"></div>
-        </div>
-      </div>
-    </main>
+  <!-- Main section -->
+  <div id="home" class="transform duration-500"></div>
+  <main class="container main-content mt-20 md:mt-32 md:flex md:flex-row-reverse">
 
+    <!-- Background image -->
+    <div class="md:p-4 md:w-1/2">
+      <img class="pl-12" src="./images/main-img.png" alt="main-image" />
+    </div>
+
+    <!-- Main letters -->
+    <div class="md:p-4 md:w-1/2">
+      <h1 class="bold-font text-5xl mt-12 md:text-8xl">BAGDAD</h1>
+      <p class="mt-4 text-grey text-2xl md:text-3xl">Marketing agentligi</p>
+      <div class="flex items-end mt-10">
+        <h1 class="bold-font smaller h-32 md:h-60 md:larger">10</h1>
+        <p class="md:text-2xl md:w-56 md:h-14 text-grey">
+          muvaffaqiyatli loyihalar
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Services section -->
+  <div id="services" class="transform duration-500"></div>
+  <div class="services">
     <div class="container mt-32">
       <div class="flex items-center justify-center">
         <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
@@ -242,144 +191,146 @@
     <div class="container mt-24">
       <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
         <div class="my-10 flex flex-col items-center justify-center">
-          <img
-            class="w-36 md:w-48"
-            src="./images/service1.png"
-            alt="service1"
-          />
+          <img class="w-36 md:w-48" src="./images/service1.png" alt="service1" />
           <h2 class="text-center mt-5 text-3xl">MARKETING TADQIQOT</h2>
         </div>
         <div class="my-10 flex flex-col items-center justify-center">
-          <img
-            class="w-36 md:w-48"
-            src="./images/service2.png"
-            alt="service2"
-          />
-          <h2 class="text-center mt-5 text-3xl">MARKETING STRATEGIYA</h2>
-        </div>
-        <div class="my-10 flex flex-col items-center justify-center">
-          <img
-            class="w-36 md:w-48"
-            src="./images/service3.png"
-            alt="service3"
-          />
+          <img class="w-36 md:w-48" src="./images/service2.png" alt="service2" />
           <h2 class="text-center mt-5 text-3xl">SMM</h2>
         </div>
         <div class="my-10 flex flex-col items-center justify-center">
-          <img
-            class="w-36 md:w-48"
-            src="./images/service4.png"
-            alt="service4"
-          />
+          <img class="w-36 md:w-48" src="./images/service3.png" alt="service3" />
           <h2 class="text-center mt-5 text-3xl">PR</h2>
         </div>
+        <div class="my-10 flex flex-col items-center justify-center">
+          <img class="w-36 md:w-48" src="./images/service4.png" alt="service4" />
+          <h2 class="text-center mt-5 text-3xl">MARKETING STRATEGIYA</h2>
+        </div>
       </div>
-      <div id="contact" class="transform duration-500"></div>
+      <div id="about" class="transform duration-500"></div>
     </div>
+  </div>
 
-    <div class="container mt-32">
-      <div class="flex items-center justify-center">
-        <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
-        <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
-        <h1 class="text-center text-xl mx-2 md:mx-4 text-neftlix">
-          Bog'laning
-        </h1>
-        <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
-        <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
-      </div>
+  <!-- About section -->
+  <div class="container mt-32">
+    <div class="flex items-center justify-center">
+      <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
+      <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
+      <h1 class="text-center text-xl mx-2 md:mx-4 text-neftlix">
+        Biz haqimizda
+      </h1>
+      <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
+      <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
     </div>
+    <div class="mt-24">
+      <p class="leading-8 text-xl">
+        Bagdad marketing agentligi – kichik va o’rta biznesga ega shaxslar uchun xizmat qiladigan ajoyib jamoasidan
+        tashkil
+        topgan. Agentlik turli xil sohadagi tadbirkorlarga marketing strategiyasi va analiz bo’yicha o’zining ko’magini
+        berib
+        kelmoqda. 10 ga yaqin proyektlar bilan tajribaga ega jamoa sizga ham o’zining yordamini ayamaydi albatta.
+        <br>
+        Agentlik – doimo o’z ustida ishlaydigan, yangi bilimlarga chanqoq yoshlardan tashkil topgan. Bagdad – Farg’ona
+        viloyati
+        Bag’dod tumani nomidan olingani uchun “Bagdad” agentligi shaklida o’qiladi. Biz bilan – doimo
+        Bag’dodda(biznesingizda)
+        hammayoq tinch
+        <br>
+        Ijtimoiy loyihalar – Bagdad marketing agentligi bir qancha hayriya va homiylik ishlarini ham olib boradi.
+        Atrof-muhitni
+        asrash, kam ta’minlangan oilalarga manaviy yordam ko’rsatish, kasallarni moddiy qo’llab quvvatlash shular
+        jumlasidandur,
+        Hoziroq siz ham ezgu ishlarga o’z hissangizni qo’shing.
+        <br>
+        Agentlik haqida to’liq ma’lumot olish uchun ushbu telefon raqamlariga telefon qilishingiz mumkin. Yoki quyida
+        biz uchun
+        zayavka qoldiring, o’zimiz siz bilan bog’lanishga harakat qilamiz.
+      </p>
+    </div>
+  </div>
 
-    <form id="main-form" class="mt-10 bg-silver container py-10 md:py-20">
-      <div class="border-solid border border-neftlix p-5 md:p-10 md:mx-32">
-        <h4 class="text-center text-lg md:text-3xl bold-font">
-          BIZGA XABAR QOLDIRING
-        </h4>
-        <div class="mt-10 md:flex">
-          <div class="md:w-1/2 md:pr-20">
-            <div>
-              <input
-                required
-                id="user-name"
-                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix border-transparent focus:border-transparent focus:ring-0"
-                type="text"
-                placeholder="Ismingiz"
-              />
-            </div>
-            <div>
-              <input
-                required
-                id="business-field"
-                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix border-transparent focus:border-transparent focus:ring-0"
-                type="text"
-                placeholder="Biznes faoliyatingiz"
-              />
-            </div>
-            <div>
-              <input
-                required
-                id="phone-number"
-                class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix border-transparent focus:border-transparent focus:ring-0"
-                type="text"
-                placeholder="Telefon raqamingiz"
-              />
-            </div>
+
+  <!-- Contact section -->
+  <div id="contact" class="transform duration-500"></div>
+  <div class="container mt-32">
+    <div class="flex items-center justify-center">
+      <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
+      <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
+      <h1 class="text-center text-xl mx-2 md:mx-4 text-neftlix">
+        Bog'laning
+      </h1>
+      <span class="h-0.5 w-3 md:w-6 mx-1 md:mx-2 bg-neftlix"></span>
+      <span class="h-0.5 w-6 md:w-12 mx-1 md:mx-2 bg-neftlix"></span>
+    </div>
+  </div>
+
+  <form id="main-form" class="mt-10 bg-silver container py-10 md:py-20">
+    <div class="border-solid border border-neftlix p-5 md:p-10 md:mx-32">
+      <h4 class="text-center text-lg md:text-3xl bold-font">
+        BIZGA XABAR QOLDIRING
+      </h4>
+      <div class="mt-10 md:flex">
+        <div class="md:w-1/2 md:pr-20">
+          <div>
+            <input required id="user-name"
+              class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix border-transparent focus:border-transparent focus:ring-0"
+              type="text" placeholder="Ismingiz" />
           </div>
-          <div class="md:w-1/2 md:pr-10">
-            <textarea
-              required
-              id="message"
-              class="bg-silver w-full my-3 border-0 border-b-2 px-2 pb-2 border-gradiend-neftlix resize-none border-transparent focus:border-transparent focus:ring-0"
-              rows="6"
-              placeholder="Xabar matni"
-            ></textarea>
-            <div class="flex justify-center md:justify-end">
-              <button
-                class="bg-neftlix px-10 py-2 text-sm rounded-2xl border border-white active:bg-silver active:text-neftlix duration-200"
-              >
-                Yuborish
-              </button>
-            </div>
+          <div>
+            <input required id="business-field"
+              class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix border-transparent focus:border-transparent focus:ring-0"
+              type="text" placeholder="Biznes faoliyatingiz" />
+          </div>
+          <div>
+            <input required id="phone-number"
+              class="bg-silver w-full my-3 border-0 border-b-2 px-2 border-gradiend-neftlix border-transparent focus:border-transparent focus:ring-0"
+              type="text" placeholder="Telefon raqamingiz" />
+          </div>
+        </div>
+        <div class="md:w-1/2 md:pr-10">
+          <textarea required id="message"
+            class="bg-silver w-full my-3 border-0 border-b-2 px-2 pb-2 border-gradiend-neftlix resize-none border-transparent focus:border-transparent focus:ring-0"
+            rows="6" placeholder="Xabar matni"></textarea>
+          <div class="flex justify-center md:justify-end">
+            <button
+              class="bg-neftlix px-10 py-2 text-sm rounded-2xl border border-white active:bg-silver active:text-neftlix duration-200">
+              Yuborish
+            </button>
           </div>
         </div>
       </div>
-    </form>
+    </div>
+  </form>
 
-    <!-- FOOTER -->
-    <footer class="bg-silver mt-20 md:mt-36">
-      <div class="container mt-10">
-        <a href="#home">
-          <img
-            class="mx-auto w-32 md:w-40"
-            src="./images/site-logo.png"
-            alt="BAGHDAD"
-          />
-        </a>
-        <ul class="list-none flex justify-center items-center mt-10">
-          <li class="px-4 md:px-10">
-            <a class="text-neftlix text-lg md:text-xl bold-font" href="#"
-              >INSTAGRAM</a
-            >
-          </li>
-          <li class="px-4 md:px-10">
-            <a class="text-neftlix text-lg md:text-xl bold-font" href="#"
-              >FACEBOOK</a
-            >
-          </li>
-        </ul>
-        <p class="my-10 text-center text-xs md:text-lg">
-          &copy;
-          <script>
-            const Year = new Date().getFullYear();
-            document.write(Year);
-          </script>
-          &nbsp; BAGDAD AGENCY &nbsp; - &nbsp; Barcha huquqlar himoyalangan
-        </p>
-      </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="bg-silver mt-20 md:mt-36">
+    <div class="container mt-10">
+      <a href="#home">
+        <img class="mx-auto w-32 md:w-40" src="./images/site-logo.png" alt="BAGHDAD" />
+      </a>
+      <ul class="list-none flex justify-center items-center mt-10">
+        <li class="px-4 md:px-10">
+          <a class="text-neftlix text-lg md:text-xl bold-font" href="#">INSTAGRAM</a>
+        </li>
+        <li class="px-4 md:px-10">
+          <a class="text-neftlix text-lg md:text-xl bold-font" href="#">FACEBOOK</a>
+        </li>
+      </ul>
+      <p class="my-10 text-center text-xs md:text-lg">
+        &copy;
+        <script>
+          const Year = new Date().getFullYear();
+          document.write(Year);
+        </script>
+        &nbsp; BAGDAD AGENCY &nbsp; - &nbsp; Barcha huquqlar himoyalangan
+      </p>
+    </div>
+  </footer>
 
-    <!-- /FOOTER -->
+  <!-- /FOOTER -->
 
-    <!-- JAVASCRIPT -->
-    <script src="./js/main.js"></script>
-  </body>
+  <!-- JAVASCRIPT -->
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
