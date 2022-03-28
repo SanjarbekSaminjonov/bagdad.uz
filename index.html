@@ -78,20 +78,18 @@
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body class="bg-black text-white" x-data="{isNavbarOpen: false, scrolledFromTop: false}">
-
-  
+<body class="bg-black text-white" x-data="{isNavbarOpen: false, isModalOpen: false}">
 
   <!-- Header -->
   <header class="bg-black w-full fixed shadow-neftlix shadow-sm p-4 md:px-12 h-18">
-    <div class="flex justify-between items-center mx-auto md:container container-xl">
+    <div class="flex flex-wrap justify-between items-center mx-auto md:container container-xl">
       <!-- Logo -->
       <a href="/">
         <img src="./images/site-logo.png" alt="Your Logo" class="md:h-16 text-neftlix h-10" />
       </a>
 
       <!-- Consulting button -->
-      <button
+      <button @click="isModalOpen = !isModalOpen"
         class="bg-neftlix px-3 py-2 text-sm mx-auto rounded-2xl flex items-center md:hidden border border-white active:bg-black active:text-neftlix duration-200">
         Konsultatsiya
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -141,7 +139,7 @@
       </nav>
 
       <!-- Consulting button -->
-      <button
+      <button @click="isModalOpen = !isModalOpen"
         class="bg-neftlix px-6 py-2 rounded-2xl hidden md:flex items-center border-2 border-white hover:bg-black hover:text-neftlix duration-200 active:text-white active:border-neftlix">
         Konsultatsiya
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -328,6 +326,54 @@
   </footer>
   <!-- /FOOTER -->
 
+  <!-- Modal -->
+  <div class="bg-black bg-opacity-80 fixed inset-0 flex justify-center items-center"
+    :class="{'hidden': !isModalOpen, 'inline-block': isModalOpen}">
+    <div class="bg-silver text-neftlix md:w-96 md:p-10 p-5 border-2 rounded">
+      <div class="flex justify-between items-center space-x-10">
+        <h4 class="text-2xl">Konsultatsiya</h4>
+        <button @click="isModalOpen = !isModalOpen">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="text-gray-200 mt-10">
+        <ul class="md:flex md:justify-around md:items-center text-lg">
+          <li class="mt-5">
+            <a @click="isModalOpen = !isModalOpen"
+              class="flex justify-center items-center space-x-1 hover:text-neftlix hover:opacity-80 active:text-gray-300"
+              target="_blank" href="tel:+998911291921">
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M16 3h5m0 0v5m0-5l-6 6M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" />
+                </svg>
+              </button>
+              <span>Telefon</span>
+            </a>
+          </li>
+          <li class="mt-5">
+            <a @click="isModalOpen = !isModalOpen"
+              class="flex justify-center items-center space-x-1 hover:text-neftlix hover:opacity-80 active:text-gray-300"
+              target="_blank" href="https://t.me/ibagdady">
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </button>
+              <span>Telegram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal -->
 
   <!-- JAVASCRIPT -->
   <script src="./js/main.js"></script>
